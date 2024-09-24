@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "moduleDetection": "force",
+    "target": "es6",
+    "module": "Preserve",
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "typeRoots": ["./node_modules/@types", "./src/typing-stubs"]
+  },
+  "include": ["src/**/*.ts", "vitest.config.ts"],
+  "exclude": ["node_modules"]
+}
